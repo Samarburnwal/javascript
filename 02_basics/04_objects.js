@@ -15,7 +15,7 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullName)
+// console.log(regularUser.fullName)
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "c", 4: "d"}
@@ -42,7 +42,34 @@ const user = [
     }
 ]
 
-console.log(Object.keys(tinderUser)) //gives array
-console.log(Object.entries(tinderUser)) //converts all the key pair values in array of array form
+// console.log(Object.keys(tinderUser)) //gives array
+// console.log(Object.entries(tinderUser)) //converts all the key pair values in array of array form
 
-console.log(tinderUser.hasOwnProperty('isLogged'))
+// console.log(tinderUser.hasOwnProperty('isLogged'))
+
+const course = {
+    courseName: "JS_In_Hindi",
+    courseInstructor: "Hitesh Choudhary",
+    price: "000"
+}
+
+console.log(course.courseInstructor) //We are trying to access the value of courseInstructor from the object course
+
+//One more way of doing this is by destructuring the object'
+
+const {courseInstructor} = course
+console.log(courseInstructor)
+
+const {courseInstructor:Instructor} = course //by using the semicolon we can allot a new name for the courseInstructor as only Instructor
+
+// {
+//     "name":"samar",
+//     "isLoggedIn":"false",
+//     "userId":"samixel"
+// }  it is a format of an api,json objects
+
+// [
+//     {},
+//     {},
+//     {}
+// ] //sometimes we get api's or json as an array of objects and by using loops we can access them individually
