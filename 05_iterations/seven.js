@@ -10,5 +10,5 @@ const specialNums = myNumbers
                     .map((elem)=> elem+10)
                     .filter((elem)=>elem>=14)
                     .map((e)=> e*10);
-
+//Chaining of map filter
 console.log(specialNums);
